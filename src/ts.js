@@ -58,7 +58,7 @@ module.exports = {
 				'typescript-enum/no-enum': 'error',
 
 				/* Overrides */
-				'function-paren-newline': ['error', { minItems: 2 }],
+				'function-paren-newline': ['error', 'always'],
 
 				'no-unused-vars': 'off',
 				'@typescript-eslint/no-unused-vars': [
