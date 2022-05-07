@@ -10,8 +10,7 @@ module.exports = {
 	plugins: [
 		'simple-import-sort',
 		'import',
-		'newline-destructuring',
-		'modules-newline'
+		'newline-destructuring'
 	],
 
 	settings: {},
