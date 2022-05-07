@@ -40,7 +40,18 @@ module.exports = {
 				'@typescript-eslint/array-type': 'error',
 
 				/* Overrides */
-				'function-paren-newline': ['error', { minItems: 2 }]
+				'function-paren-newline': ['error', { minItems: 2 }],
+
+				'no-unused-vars'                   : 'off',
+				'@typescript-eslint/no-unused-vars': [
+					'error',
+					{
+						vars              : 'all',
+						args              : 'all',
+						ignoreRestSiblings: false,
+						argsIgnorePattern : '^_'
+					}
+				]
 			}
 		}
 	]
