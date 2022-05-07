@@ -1,15 +1,19 @@
 {
 	"name": "eslint-config-hetchet",
 	"version": "0.0.1",
-	"files": ["src"],
+	"exports": {
+		"js": "./src/js.js",
+		"ts": "./src/ts.js"
+	},
 	"keywords": [
 		"eslint",
 		"eslintconfig"
 	],
 	"dependencies": {
+		"@typescript-eslint/parser": "^5.22.0",
+		"eslint-import-resolver-typescript": "^2.7.1",
 		"eslint-plugin-import": "^2.26.0",
-		"eslint-plugin-simple-import-sort": "^7.0.0",
-		"@typescript-eslint/parser": "^5.22.0"
+		"eslint-plugin-simple-import-sort": "^7.0.0"
 	},
 	"peerDependencies": {
 		"eslint": "^8.15.0"

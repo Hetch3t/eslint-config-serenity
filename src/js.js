@@ -9,6 +9,8 @@ module.exports = {
 	extends: ['eslint:recommended'],
 	plugins: ['simple-import-sort', 'import'],
 
+	settings: {},
+
 	rules: {
 		/* Code-style */
 		'indent'                 : ['error', 'tab'],

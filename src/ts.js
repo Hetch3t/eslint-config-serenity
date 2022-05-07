@@ -12,6 +12,22 @@ module.exports = {
 	extends: [...jsConfig.extends, 'plugin:@typescript-eslint/recommended'],
 	plugins: [...jsConfig.plugins, '@typescript-eslint'],
 
+	settings: {
+		...jsConfig.settings,
+		...{
+			'import/parsers' : { '@typescript-eslint/parser': ['.ts', '.tsx']},
+			'import/resolver': {
+				typescript: {
+					alwaysTryTypes: true,
+					project       : [
+						'tsconfig.json',
+						'packages/*/tsconfig.json'
+					]
+				}
+			}
+		}
+	},
+
 	parser       : '@typescript-eslint/parser',
 	parserOptions: { ecmaVersion: 'latest' },
 
