@@ -1,0 +1,11 @@
+{
+	"name": "eslint-config-hetchet",
+	"version": "0.0.1",
+	"keywords": [
+		"eslint",
+		"eslintconfig"
+	],
+	"peerDependencies": {
+		"eslint": "^8.15.0"
+	}
+}
