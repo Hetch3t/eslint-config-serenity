@@ -1,4 +1,4 @@
-const config = require('./src')
+const jsConfig = require('./src/js')
 
 
-module.exports = config.js
+module.exports = jsConfig
