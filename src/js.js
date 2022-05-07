@@ -36,7 +36,8 @@ module.exports = {
 			'error',
 			{
 				code: 80,
-				comments: 120
+				comments: 120,
+				ignorePattern: '^(import\\s|const\\s.*require\\()'
 			}
 		],
 		'linebreak-style': ['error', 'unix'],
