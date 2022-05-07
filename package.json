@@ -2,8 +2,8 @@
 	"name": "eslint-config-hetchet",
 	"version": "0.0.1",
 	"exports": {
-		"js": "./src/js.js",
-		"ts": "./src/ts.js"
+		"./js": "./src/js.js",
+		"./ts": "./src/ts.js"
 	},
 	"keywords": [
 		"eslint",
