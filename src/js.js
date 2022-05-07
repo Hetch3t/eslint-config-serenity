@@ -1,9 +1,9 @@
 module.exports = {
 	root: true,
-	env : {
-		node  : true,
+	env: {
+		node: true,
 		es2022: true,
-		jest  : true
+		jest: true
 	},
 
 	extends: ['eslint:recommended'],
@@ -18,47 +18,46 @@ module.exports = {
 
 	rules: {
 		/* Code-style */
-		'indent'                 : ['error', 'tab'],
-		'quotes'                 : ['error', 'single'],
-		'semi'                   : ['error', 'never'],
-		'comma-dangle'           : 'error',
-		'comma-style'            : 'error',
-		'comma-spacing'          : 'error',
-		'eol-last'               : 'error',
+		'indent': ['error', 'tab'],
+		'quotes': ['error', 'single'],
+		'semi': ['error', 'never'],
+		'comma-dangle': 'error',
+		'comma-style': 'error',
+		'comma-spacing': 'error',
+		'eol-last': 'error',
 		'no-multiple-empty-lines': [
 			'error',
 			{
-				max   : 2,
+				max: 2,
 				maxEOF: 0
 			}
 		],
 		'max-len': [
 			'error',
 			{
-				code    : 80,
+				code: 80,
 				comments: 120
 			}
 		],
-		'linebreak-style'   : ['error', 'unix'],
+		'linebreak-style': ['error', 'unix'],
 		'no-trailing-spaces': 'error',
-		'no-multi-spaces'   : 'error',
-		'no-tabs'           : ['error', { allowIndentationTabs: true }],
-		'no-useless-rename' : 'error',
-		'spaced-comment'    : ['error', 'always', { exceptions: ['*', '-']}],
-		'block-spacing'     : 'error',
-		'brace-style'       : 'error',
+		'no-multi-spaces': 'error',
+		'no-useless-rename': 'error',
+		'spaced-comment': ['error', 'always', { exceptions: ['*', '-']}],
+		'block-spacing': 'error',
+		'brace-style': 'error',
 
-		'dot-location'            : ['error', 'property'],
+		'dot-location': ['error', 'property'],
 		'newline-per-chained-call': ['error', { ignoreChainWithDepth: 1 }],
 
 		'no-extra-parens': 'error',
 
 		/* Imports / exports rules */
-		'no-duplicate-imports'       : 'error',
+		'no-duplicate-imports': 'error',
 		// From plugins
-		'import/no-unresolved'       : 'error',
+		'import/no-unresolved': 'error',
 		'import/newline-after-import': ['error', { count: 2 }],
-		'simple-import-sort/imports' : [
+		'simple-import-sort/imports': [
 			'error',
 			{
 				groups: [
@@ -77,20 +76,20 @@ module.exports = {
 		],
 
 		/* Variables rules */
-		'no-var'        : 'error',
+		'no-var': 'error',
 		'no-unused-vars': [
 			'error',
 			{
-				vars              : 'all',
-				args              : 'all',
+				vars: 'all',
+				args: 'all',
 				ignoreRestSiblings: false,
-				argsIgnorePattern : '^_'
+				argsIgnorePattern: '^_'
 			}
 		],
-		'prefer-const'        : 'error',
+		'prefer-const': 'error',
 		'prefer-destructuring': ['error', { object: true }],
-		'multiline-ternary'   : ['error', 'always-multiline'],
-		'operator-linebreak'  : [
+		'multiline-ternary': ['error', 'always-multiline'],
+		'operator-linebreak': [
 			'error',
 			'after',
 			{
@@ -100,27 +99,27 @@ module.exports = {
 				}
 			}
 		],
-		'template-curly-spacing'       : 'error',
+		'template-curly-spacing': 'error',
 		'newline-destructuring/newline': ['error', { items: 1 }],
 
 		/* Object rules */
-		'quote-props'     : ['error', 'consistent-as-needed'],
+		'quote-props': ['error', 'consistent-as-needed'],
 		'object-shorthand': ['error', 'consistent-as-needed'],
-		'dot-notation'    : 'error',
-		'key-spacing'     : [
-			'error',
-			{
-				align    : { },
-				multiLine: { }
-			}
+		'dot-notation': 'error',
+		'key-spacing': [
+			'error'
+			// {
+			// 	align    : { },
+			// 	multiLine: { }
+			// }
 		],
-		'object-curly-newline'   : ['error', { multiline: true }],
+		'object-curly-newline': ['error', { multiline: true }],
 		'object-property-newline': 'error',
-		'object-curly-spacing'   : [
+		'object-curly-spacing': [
 			'error',
 			'always',
 			{
-				arraysInObjects : false,
+				arraysInObjects: false,
 				objectsInObjects: false
 			}
 		],
@@ -132,23 +131,23 @@ module.exports = {
 		'array-element-newline': ['error', 'consistent'],
 
 		/* Function rules */
-		'func-style'                    : 'error',
-		'default-param-last'            : 'error',
-		'space-before-function-paren'   : 'error',
-		'func-call-spacing'             : 'error',
-		'function-paren-newline'        : 'error',
+		'func-style': 'error',
+		'default-param-last': 'error',
+		'space-before-function-paren': 'error',
+		'func-call-spacing': 'error',
+		'function-paren-newline': 'error',
 		'function-call-argument-newline': ['error', 'consistent'],
-		'arrow-spacing'                 : 'error',
-		'arrow-parens'                  : 'error',
-		'arrow-body-style'              : ['error', 'as-needed'],
-		'require-await'                 : 'error',
-		'no-return-await'               : 'error',
-		'no-return-assign'              : 'error',
-		'no-useless-return'             : 'error',
+		'arrow-spacing': 'error',
+		'arrow-parens': 'error',
+		'arrow-body-style': ['error', 'as-needed'],
+		'require-await': 'error',
+		'no-return-await': 'error',
+		'no-return-assign': 'error',
+		'no-useless-return': 'error',
 
 		/* Keyword rules */
 		'keyword-spacing': 'error',
-		'curly'          : ['error', 'multi-line', 'consistent'],
-		'no-else-return' : 'error'
+		'curly': ['error', 'multi-line', 'consistent'],
+		'no-else-return': 'error'
 	}
 }
