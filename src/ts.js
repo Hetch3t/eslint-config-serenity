@@ -9,8 +9,15 @@ module.exports = {
 		jest  : true
 	},
 
-	extends: [...jsConfig.extends, 'plugin:@typescript-eslint/recommended'],
-	plugins: [...jsConfig.plugins, '@typescript-eslint'],
+	extends: [
+		...jsConfig.extends,
+		'plugin:@typescript-eslint/recommended'
+	],
+	plugins: [
+		...jsConfig.plugins,
+		'@typescript-eslint',
+		'typescript-enum'
+	],
 
 	settings: {
 		...jsConfig.settings,
@@ -37,7 +44,18 @@ module.exports = {
 		{
 			files: ['*.ts', '*.tsx'],
 			rules: {
-				'@typescript-eslint/array-type': 'error',
+				'@typescript-eslint/array-type'                  : 'error',
+				'@typescript-eslint/class-literal-property-style': [
+					'error',
+					'fields'
+				],
+				'@typescript-eslint/member-ordering'                  : 'error',
+				'@typescript-eslint/no-unnecessary-condition'         : 'error',
+				'@typescript-eslint/non-nullable-type-assertion-style': 'error',
+				'@typescript-eslint/prefer-optional-chain'            : 'error',
+				'@typescript-eslint/type-annotation-spacing'          : 'error',
+				// Plugin rule
+				'typescript-enum/no-enum'                             : 'error',
 
 				/* Overrides */
 				'function-paren-newline': ['error', { minItems: 2 }],

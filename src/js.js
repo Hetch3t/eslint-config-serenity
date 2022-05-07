@@ -7,7 +7,12 @@ module.exports = {
 	},
 
 	extends: ['eslint:recommended'],
-	plugins: ['simple-import-sort', 'import'],
+	plugins: [
+		'simple-import-sort',
+		'import',
+		'newline-destructuring',
+		'modules-newline'
+	],
 
 	settings: {},
 
@@ -95,7 +100,8 @@ module.exports = {
 				}
 			}
 		],
-		'template-curly-spacing': 'error',
+		'template-curly-spacing'       : 'error',
+		'newline-destructuring/newline': ['error', { items: 1 }],
 
 		/* Object rules */
 		'quote-props'     : ['error', 'consistent-as-needed'],
@@ -127,6 +133,7 @@ module.exports = {
 
 		/* Function rules */
 		'func-style'                    : 'error',
+		'default-param-last'            : 'error',
 		'space-before-function-paren'   : 'error',
 		'func-call-spacing'             : 'error',
 		'function-paren-newline'        : 'error',
@@ -141,7 +148,7 @@ module.exports = {
 
 		/* Keyword rules */
 		'keyword-spacing': 'error',
-		'curly'          : ['error', 'multi', 'consistent'],
+		'curly'          : ['error', 'multi-line', 'consistent'],
 		'no-else-return' : 'error'
 	}
 }
