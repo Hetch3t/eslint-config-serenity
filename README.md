@@ -4,6 +4,14 @@
 
 Every time starting new project I was catching frustration due to ESLint / Prettier / Standard etc. setup. So decided to have a single source of truth for linting and formatting purposes for my fullstack JS / TS projects.
 
+## Features
+
+- Very opinionated (though can be overriden)
+- Tabs by default
+- Focus on code consistency and readability
+- Easy setup for new projects
+- Support for both JS and TS
+
 ## Installation
 
 ### Package dependencies
@@ -24,33 +32,20 @@ Even if you use `yarn`, this utility will detect that and use `yarn` instead of 
 
 ### Config inheritance
 
-It is possible to set inheritance either via `package.json` or with config files.
-
-#### Via `package.json`
-
-```json
-"prettier": "@hetchet/serenity/prettier"
-"eslintConfig": {
-	"extends": [
-		"@hetchet/serenity/ts"
-	]
-},
-```
-
-#### Via configuration files
-
 `.prettierrc.js`:
 
 ```js
 module.exports = {
 	...require('@hetchet/serenity/prettier')
+	// Any Prettier overrides
 }
 ```
 
-`.eslintrc.js` (or whatever):
+`.eslintrc.js`:
 
-```js
+```ts
 module.exports = {
-	extends: ['@hetchet/serenity/ts']
+	...require('@hetchet/serenity/ts')
+	// Any ESLint overrides
 }
 ```
