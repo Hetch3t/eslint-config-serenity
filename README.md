@@ -1,4 +1,4 @@
-# serenity
+# 🪷 serenity
 
 ## Motivation
 
