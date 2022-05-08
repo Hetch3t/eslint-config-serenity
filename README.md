@@ -18,9 +18,9 @@ Every time starting new project I was catching frustration due to ESLint / Prett
 
 To get this config working it is required to have installed several packages:
 
-- `eslint:>=8`
-- `prettier:>=2`
-- `prettier-eslint:>=14`
+- `eslint: >=8`
+- `prettier: >=2`
+- `prettier-eslint: >=14`
 
 To install of these with single lint:
 
