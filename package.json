@@ -6,6 +6,10 @@
 		"./ts": "./src/ts.js",
 		"./prettier": "./src/prettier.js"
 	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/Hetch3t/serenity.git"
+	},
 	"keywords": [
 		"eslint",
 		"eslintconfig",
