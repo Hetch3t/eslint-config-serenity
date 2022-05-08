@@ -8,7 +8,14 @@
 	},
 	"keywords": [
 		"eslint",
-		"eslintconfig"
+		"eslintconfig",
+		"prettier",
+		"prettier-eslint",
+		"hetchet",
+		"javascript",
+		"typescript",
+		"linting",
+		"formatting"
 	],
 	"dependencies": {
 		"@typescript-eslint/eslint-plugin": "^5.22.0",
