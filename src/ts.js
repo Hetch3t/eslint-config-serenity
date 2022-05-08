@@ -33,10 +33,11 @@ module.exports = {
 				'@typescript-eslint/array-type': 'error',
 				'@typescript-eslint/class-literal-property-style': ['error', 'fields'],
 				'@typescript-eslint/member-ordering': 'error',
-				'@typescript-eslint/non-nullable-type-assertion-style': 'error',
 				'@typescript-eslint/prefer-optional-chain': 'error',
 				'@typescript-eslint/type-annotation-spacing': 'error',
-				// Plugin rule
+				'@typescript-eslint/no-empty-function': 'off',
+
+				// Plugin rules
 				'typescript-enum/no-enum': 'error',
 
 				/* Overrides */
