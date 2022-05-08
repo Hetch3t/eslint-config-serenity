@@ -13,7 +13,6 @@ module.exports = {
 
 	rules: {
 		/* Code-style */
-		'indent': ['error', 'tab'],
 		'quotes': ['error', 'single'],
 		'semi': ['error', 'never'],
 		'comma-dangle': 'error',
@@ -41,6 +40,11 @@ module.exports = {
 		'no-multi-spaces': 'error',
 		'no-useless-rename': 'error',
 		'spaced-comment': ['error', 'always', { exceptions: ['*', '-']}],
+		'lines-between-class-members': [
+			'error',
+			'always',
+			{ exceptAfterSingleLine: true }
+		],
 		'block-spacing': 'error',
 		'brace-style': 'error',
 
@@ -135,7 +139,7 @@ module.exports = {
 		'function-paren-newline': 'error',
 		'function-call-argument-newline': ['error', 'consistent'],
 		'arrow-spacing': 'error',
-		'arrow-parens': 'error',
+		'arrow-parens': ['error', 'as-needed'],
 		'arrow-body-style': ['error', 'as-needed'],
 		'require-await': 'error',
 		'no-return-await': 'error',

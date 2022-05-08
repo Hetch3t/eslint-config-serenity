@@ -41,7 +41,7 @@ module.exports = {
 				'typescript-enum/no-enum': 'error',
 
 				/* Overrides */
-				'function-paren-newline': 'error',
+				'function-paren-newline': ['error', 'consistent'],
 
 				'no-unused-vars': 'off',
 				'@typescript-eslint/no-unused-vars': [

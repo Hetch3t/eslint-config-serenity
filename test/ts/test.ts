@@ -8,8 +8,14 @@ import { ParserOptions } from '@typescript-eslint/parser'
 
 const MockDecorator =
 	(_: Record<string, string | string[]>): ClassDecorator =>
-		() => {}
+	() => {}
 const MockPropertyDecorator = (): PropertyDecorator => () => {}
+const InjectRepository =
+	(_): ParameterDecorator =>
+	() => {}
+
+type Repository<T> = Record<string, T>
+type TestType = string
 
 @MockDecorator({
 	selector: 'app-button',
@@ -20,7 +26,12 @@ export class MockClass {
 	@MockPropertyDecorator() text: string
 	@MockPropertyDecorator() color: string
 
-	constructor () {}
+	@Field(_returns => String, { description: 'count like dish' })
+	like: number
+
+	constructor (
+		@InjectRepository('qweqweqwe') private _menuRepository: Repository<TestType>
+	) {}
 
 	ngOnInit (): void {}
 }
