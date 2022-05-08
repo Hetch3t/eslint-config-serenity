@@ -12,24 +12,20 @@ module.exports = {
 	extends: [...jsConfig.extends, 'plugin:@typescript-eslint/recommended'],
 	plugins: [...jsConfig.plugins, '@typescript-eslint', 'typescript-enum'],
 
+	parser: '@typescript-eslint/parser',
+
 	settings: {
 		...jsConfig.settings,
-		...{
-			'import/parsers': { '@typescript-eslint/parser': ['.ts', '.tsx']},
-			'import/resolver': {
-				typescript: {
-					alwaysTryTypes: true,
-					project: ['tsconfig.json', 'packages/*/tsconfig.json']
-				}
+		'import/parsers': { '@typescript-eslint/parser': ['.ts', '.tsx']},
+		'import/resolver': {
+			typescript: {
+				alwaysTryTypes: true,
+				project: ['tsconfig.json', 'packages/*/tsconfig.json']
 			}
 		}
 	},
 
-	parser: '@typescript-eslint/parser',
-	parserOptions: { ecmaVersion: 'latest' },
-
-	rules: { ...jsConfig.rules },
-
+	rules: jsConfig.rules,
 	overrides: [
 		{
 			files: ['*.ts', '*.tsx'],
@@ -37,7 +33,6 @@ module.exports = {
 				'@typescript-eslint/array-type': 'error',
 				'@typescript-eslint/class-literal-property-style': ['error', 'fields'],
 				'@typescript-eslint/member-ordering': 'error',
-				'@typescript-eslint/no-unnecessary-condition': 'error',
 				'@typescript-eslint/non-nullable-type-assertion-style': 'error',
 				'@typescript-eslint/prefer-optional-chain': 'error',
 				'@typescript-eslint/type-annotation-spacing': 'error',
