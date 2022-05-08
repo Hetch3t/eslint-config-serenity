@@ -136,7 +136,7 @@ module.exports = {
 		'default-param-last': 'error',
 		'space-before-function-paren': 'error',
 		'func-call-spacing': 'error',
-		'function-paren-newline': 'error',
+		'function-paren-newline': ['error', 'consistent'],
 		'function-call-argument-newline': ['error', 'consistent'],
 		'arrow-spacing': 'error',
 		'arrow-parens': ['error', 'as-needed'],
