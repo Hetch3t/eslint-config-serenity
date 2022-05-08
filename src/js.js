@@ -45,7 +45,7 @@ module.exports = {
 		'brace-style': 'error',
 
 		'dot-location': ['error', 'property'],
-		'newline-per-chained-call': ['error', { ignoreChainWithDepth: 1 }],
+		'newline-per-chained-call': ['error', { ignoreChainWithDepth: 2 }],
 
 		'no-extra-parens': 'error',
 
