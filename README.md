@@ -8,7 +8,7 @@ Every time starting new project I was catching frustration due to ESLint / Prett
 
 - Very opinionated (though can be overriden)
 - Tabs by default
-- Focus on code consistency and readability
+- Focus on readability and consistent code style
 - Easy setup for new projects
 - Support for both JS and TS
 
@@ -37,7 +37,7 @@ Even if you use `yarn`, this utility will detect that and use `yarn` instead of 
 ```js
 module.exports = {
 	...require('@hetchet/serenity/prettier')
-	// Any Prettier overrides
+	// Any Prettier overrides go here
 }
 ```
 
@@ -46,6 +46,22 @@ module.exports = {
 ```ts
 module.exports = {
 	...require('@hetchet/serenity/ts')
-	// Any ESLint overrides
+	// Any ESLint overrides go here
 }
 ```
+
+### Overrides
+
+Indent is handled by Prettier, so if you prefer spaces instead of tabs, then the only thing you will need to change is in `.prettierrc.js`:
+
+```js
+module.exports = {
+	...require('@hetchet/serenity/prettier'),
+	useTabs: false
+}
+```
+
+## VSCode
+For the best experience in VSCode code editor, I can recommend installing these two extensions:
+- [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint) - to show linting errors
+- [Prettier-ESLint](https://marketplace.visualstudio.com/items?itemName=rvest.vs-code-prettier-eslint) - to format code based on Prettier and ESLint settings. Be aware that `>=5.0.0` version is required, which currently is _Pre-Release_.
