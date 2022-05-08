@@ -7,11 +7,7 @@ module.exports = {
 	},
 
 	extends: ['eslint:recommended'],
-	plugins: [
-		'simple-import-sort',
-		'import',
-		'newline-destructuring'
-	],
+	plugins: ['simple-import-sort', 'import', 'newline-destructuring'],
 
 	settings: {},
 
@@ -36,6 +32,7 @@ module.exports = {
 			{
 				code: 80,
 				comments: 120,
+				tabWidth: 2,
 				ignorePattern: '^(import\\s|const\\s.*require\\()'
 			}
 		],
@@ -61,7 +58,7 @@ module.exports = {
 			'error',
 			{
 				groups: [
-				// Side effect imports.
+					// Side effect imports.
 					['^\\u0000'],
 					// Packages.
 					['^[a-zA-Z0-9]'],

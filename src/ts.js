@@ -9,15 +9,8 @@ module.exports = {
 		jest: true
 	},
 
-	extends: [
-		...jsConfig.extends,
-		'plugin:@typescript-eslint/recommended'
-	],
-	plugins: [
-		...jsConfig.plugins,
-		'@typescript-eslint',
-		'typescript-enum'
-	],
+	extends: [...jsConfig.extends, 'plugin:@typescript-eslint/recommended'],
+	plugins: [...jsConfig.plugins, '@typescript-eslint', 'typescript-enum'],
 
 	settings: {
 		...jsConfig.settings,
@@ -26,10 +19,7 @@ module.exports = {
 			'import/resolver': {
 				typescript: {
 					alwaysTryTypes: true,
-					project: [
-						'tsconfig.json',
-						'packages/*/tsconfig.json'
-					]
+					project: ['tsconfig.json', 'packages/*/tsconfig.json']
 				}
 			}
 		}
@@ -45,10 +35,7 @@ module.exports = {
 			files: ['*.ts', '*.tsx'],
 			rules: {
 				'@typescript-eslint/array-type': 'error',
-				'@typescript-eslint/class-literal-property-style': [
-					'error',
-					'fields'
-				],
+				'@typescript-eslint/class-literal-property-style': ['error', 'fields'],
 				'@typescript-eslint/member-ordering': 'error',
 				'@typescript-eslint/no-unnecessary-condition': 'error',
 				'@typescript-eslint/non-nullable-type-assertion-style': 'error',
