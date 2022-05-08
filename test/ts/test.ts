@@ -1,3 +1,11 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
+
+import eslint from 'eslint'
+import prettier from 'prettier'
+
+import { ParserOptions } from '@typescript-eslint/parser'
+
+
 const MockDecorator =
 	(_: Record<string, string | string[]>): ClassDecorator =>
 		() => {}

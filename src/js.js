@@ -110,7 +110,7 @@ module.exports = {
 			// 	multiLine: { }
 			// }
 		],
-		'object-curly-newline': ['error', { multiline: true }],
+		'object-curly-newline': ['error', 'consistent'],
 		'object-property-newline': 'error',
 		'object-curly-spacing': [
 			'error',
