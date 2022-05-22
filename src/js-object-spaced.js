@@ -18,6 +18,7 @@ module.exports = {
 					align: "colon"
 				}
 			}
-		]
+		],
+		"no-multi-spaces": "off"
 	}
 }
