@@ -3,6 +3,8 @@ module.exports = {
 	singleAttributePerLine: true,
 	bracketSameLine: false,
 	semi: false,
-	trailingComma: 'none',
+	trailingComma: "none",
+	quoteProps: "consistent",
+	arrowParens: "avoid",
 	useTabs: true
 }
