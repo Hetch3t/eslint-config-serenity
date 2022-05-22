@@ -54,14 +54,14 @@ module.exports = {
 }
 ```
 
-Or
+or
 
 `package.json`:
 
 ```jsonc
 {
 	//...
-	"prettier": "@hetchet/serenity",
+	"prettier": "@hetchet/serenity/prettier",
 	//...
 }
 ```
