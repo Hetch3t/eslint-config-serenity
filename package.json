@@ -1,5 +1,5 @@
 {
-	"name": "@hetchet/serenity",
+	"name": "@hetchet/eslint-config-serenity",
 	"version": "0.0.1",
 	"keywords": [
 		"eslint",
@@ -12,10 +12,10 @@
 		"linting",
 		"formatting"
 	],
-	"homepage": "https://github.com/Hetch3t/serenity.git",
+	"homepage": "https://github.com/Hetch3t/eslint-config-serenity.git",
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/Hetch3t/serenity.git"
+		"url": "https://github.com/Hetch3t/eslint-config-serenity.git"
 	},
 	"author": {
 		"name": "Hetchet",
@@ -23,8 +23,10 @@
 	},
 	"exports": {
 		"./js": "./src/js.js",
+		"./esm": "./src/esm.js",
 		"./js-object-spaced": "./src/js-object-spaced.js",
 		"./ts": "./src/ts.js",
+		"./ts-object-spaced": "./src/ts-object-spaced.js",
 		"./prettier": "./src/prettier.js"
 	},
 	"dependencies": {
