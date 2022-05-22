@@ -1,4 +1,4 @@
-const jsConfig = require('./src/js')
+const jsConfig = require("./src/js")
 
 
 module.exports = jsConfig

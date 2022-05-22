@@ -1,15 +1,6 @@
 {
 	"name": "@hetchet/serenity",
 	"version": "0.0.1",
-	"exports": {
-		"./js": "./src/js.js",
-		"./ts": "./src/ts.js",
-		"./prettier": "./src/prettier.js"
-	},
-	"repository": {
-		"type": "git",
-		"url": "https://github.com/Hetch3t/serenity.git"
-	},
 	"keywords": [
 		"eslint",
 		"eslintconfig",
@@ -21,26 +12,42 @@
 		"linting",
 		"formatting"
 	],
+	"homepage": "https://github.com/Hetch3t/serenity.git",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/Hetch3t/serenity.git"
+	},
+	"author": {
+		"name": "Hetchet",
+		"email": "senieck@gmail.com"
+	},
+	"exports": {
+		"./js": "./src/js.js",
+		"./js-object-spaced": "./src/js-object-spaced.js",
+		"./ts": "./src/ts.js",
+		"./prettier": "./src/prettier.js"
+	},
 	"dependencies": {
-		"@typescript-eslint/eslint-plugin": "^5.22.0",
-		"@typescript-eslint/parser": "^5.22.0",
+		"@typescript-eslint/eslint-plugin": "^5.25.0",
+		"@typescript-eslint/parser": "^5.25.0",
+		"eslint-config-prettier": "^8.5.0",
 		"eslint-import-resolver-typescript": "^2.7.1",
 		"eslint-plugin-import": "^2.26.0",
 		"eslint-plugin-newline-destructuring": "^1.0.1",
+		"eslint-plugin-prettier": "^4.0.0",
 		"eslint-plugin-simple-import-sort": "^7.0.0",
-		"eslint-plugin-typescript-enum": "^2.1.0"
-	},
-	"peerDependencies": {
-		"eslint": "^8.15.0",
-		"prettier": "^2.6.2",
-		"prettier-eslint": "^14.0.2"
+		"eslint-plugin-typescript-enum": "^2.1.0",
+		"prettier-plugin-packagejson": "^2.2.18"
 	},
 	"devDependencies": {
-		"@typescript-eslint/eslint-plugin": "^5.22.0",
-		"eslint": "^8.15.0",
-		"eslint-plugin-simple-import-sort": "^7.0.0",
+		"eslint": "^8.16.0",
 		"prettier": "^2.6.2",
-		"prettier-eslint": "^14.0.2",
+		"prettier-eslint": "^15.0.0",
 		"typescript": "^4.6.4"
+	},
+	"peerDependencies": {
+		"eslint": ">= 8.0.0",
+		"prettier": ">= 2.6.0",
+		"prettier-eslint": ">= 15.0.0"
 	}
 }

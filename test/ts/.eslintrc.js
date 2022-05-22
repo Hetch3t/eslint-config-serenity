@@ -1,4 +1,4 @@
-const tsConfig = require('../../src/ts')
+const tsConfig = require("../../src/ts")
 
 
 module.exports = tsConfig
