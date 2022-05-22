@@ -58,11 +58,11 @@ Or
 
 `package.json`:
 
-```json
+```jsonc
 {
-	...
+	//...
 	"prettier": "@hetchet/serenity",
-	...
+	//...
 }
 ```
 
