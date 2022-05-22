@@ -58,6 +58,7 @@ module.exports = {
 		],
 		"block-spacing": "error",
 		"brace-style": "error",
+		"eqeqeq": ["error", "always", { null: "ignore" }],
 
 		"dot-location": ["error", "property"],
 		"newline-per-chained-call": ["error", { ignoreChainWithDepth: 2 }],
