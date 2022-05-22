@@ -23,6 +23,8 @@ module.exports = {
 		/* Code-style */
 		"comma-style": "error",
 		"comma-spacing": "error",
+		"semi": ["error", "never"],
+		"quotes": ["error", "double"],
 		"eol-last": "error",
 		"no-multiple-empty-lines": [
 			"error",
