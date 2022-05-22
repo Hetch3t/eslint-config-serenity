@@ -4,10 +4,10 @@
 [![downloads][downloads-image]][downloads-url]
 [![test][serenity-image]][serenity-url]
 
-[npm-image]: https://img.shields.io/npm/v/@hetchet/serenity.svg?style=flat
-[npm-url]: https://npmjs.org/package/@hetchet/serenity
-[downloads-image]: https://img.shields.io/npm/dm/@hetchet/serenity.svg?style=flat
-[downloads-url]: https://npmjs.org/package/@hetchet/serenity
+[npm-image]: https://img.shields.io/npm/v/@hetchet/eslint-config-serenity.svg?style=flat
+[npm-url]: https://npmjs.org/package/@hetchet/eslint-config-serenity
+[downloads-image]: https://img.shields.io/npm/dm/@hetchet/eslint-config-serenity.svg?style=flat
+[downloads-url]: https://npmjs.org/package/@hetchet/eslint-config-serenity
 [serenity-image]: https://img.shields.io/badge/code%20style-%F0%9F%AA%B7%20serenity-4AD3BA?style=flat
 [serenity-url]: https://npmjs.org/package/@hetchet/serenity
 
@@ -31,12 +31,12 @@ To get this config working it is required to have installed several packages:
 
 - `eslint: >=8`
 - `prettier: >=2`
-- `prettier-eslint: >=14`
+- `prettier-eslint: >=15`
 
 To install of these with single lint:
 
 ```sh
-npx install-peerdeps --dev @hetchet/serenity
+npx install-peerdeps --dev @hetchet/eslint-config-serenity
 ```
 
 Even if you use `yarn`, this utility will detect that and use `yarn` instead of `npm`.
@@ -49,7 +49,7 @@ Even if you use `yarn`, this utility will detect that and use `yarn` instead of 
 
 ```js
 module.exports = {
-	...require("@hetchet/serenity/prettier")
+	...require("@hetchet/eslint-config-serenity/prettier")
 	// Any Prettier overrides go here
 }
 ```
@@ -61,7 +61,7 @@ or
 ```jsonc
 {
 	//...
-	"prettier": "@hetchet/serenity/prettier",
+	"prettier": "@hetchet/eslint-config-serenity/prettier"
 	//...
 }
 ```
@@ -72,19 +72,22 @@ or
 
 ```ts
 module.exports = {
-	...require("@hetchet/serenity/ts")
+	...require("@hetchet/serenity/(js|js-object-spaced|esm|ts|ts-object-spaced)")
 	// Any ESLint overrides go here
 }
 ```
 
-### Overrides
+or
 
-Indent is handled by Prettier, so if you prefer spaces instead of tabs, then the only thing you will need to change is in `.prettierrc.js`:
+`package.json`:
 
-```js
-module.exports = {
-	...require("@hetchet/serenity/prettier"),
-	useTabs: false
+```jsonc
+{
+	//...
+	"eslintConfig": {
+		"extends": "@hetchet/serenity/(js|esm|js-object-spaced|esm|ts|ts-object-spaced)"
+	}
+	//...
 }
 ```
 
