@@ -17,11 +17,19 @@ Every time starting new project I was catching frustration due to ESLint / Prett
 
 ## Features
 
-- Very opinionated (though can be overriden)
-- Tabs by default
-- Focus on readability and consistent code style
+- Very opinionated (though can be overriden (discouraged))
+- Tabs + double quotes + no semicolons
+- Focus on **readability** and **consistency**
 - Easy setup for new projects
 - Support for both JS and TS
+- Support for both backend and frontend
+
+## Variants
+- `js` - default JS projects
+- `esm` - projects with `type: module`
+- `js-object-spaced` - ads specific `key-spacing` for `objects`. Prefered option for projects that heavily rely on Objects.
+- `ts` - default option for TS projects
+- `ts-object-spaced` - ads specific `key-spacing` for `objects`. Preferred option for NestJS or Angular projects due to readability improvements of objects (e.g. in decorators).
 
 ## Installation
 
