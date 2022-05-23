@@ -1,15 +1,13 @@
 # 🪷 serenity
 
-[![npm][npm-image]][npm-url]
-[![downloads][downloads-image]][downloads-url]
-[![test][serenity-image]][serenity-url]
+[![npm][npm-image]][serenity-url]
+[![downloads][downloads-image]][serenity-url]
+[![serenity][serenity-image]][serenity-url]
 
 [npm-image]: https://img.shields.io/npm/v/@hetchet/eslint-config-serenity.svg?style=flat
-[npm-url]: https://npmjs.org/package/@hetchet/eslint-config-serenity
 [downloads-image]: https://img.shields.io/npm/dm/@hetchet/eslint-config-serenity.svg?style=flat
-[downloads-url]: https://npmjs.org/package/@hetchet/eslint-config-serenity
 [serenity-image]: https://img.shields.io/badge/code%20style-%F0%9F%AA%B7%20serenity-4AD3BA?style=flat
-[serenity-url]: https://npmjs.org/package/@hetchet/serenity
+[serenity-url]: https://npmjs.org/package/@hetchet/eslint-config-serenity
 
 ## 👀 Motivation
 
