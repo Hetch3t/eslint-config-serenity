@@ -37,8 +37,12 @@ module.exports = {
 			"error",
 			{
 				code: 80,
-				comments: 120,
 				tabWidth: 2,
+				ignoreComments: true,
+				ignoreStrings: true,
+				ignoreUrls: true,
+				ignoreTemplateLiterals: true,
+				ignoreRegExpLiterals: true,
 				ignorePattern: "^(import\\s|const\\s.*require\\()"
 			}
 		],
@@ -59,7 +63,7 @@ module.exports = {
 			{ exceptAfterSingleLine: true }
 		],
 		"block-spacing": "error",
-		"brace-style": "error",
+		"brace-style": ["error", "1tbs", { allowSingleLine: true }],
 		"eqeqeq": ["error", "always", { null: "ignore" }],
 
 		"dot-location": ["error", "property"],
@@ -147,7 +151,6 @@ module.exports = {
 		/* Function rules */
 		"func-style": "error",
 		"default-param-last": "error",
-		"space-before-function-paren": "error",
 		"func-call-spacing": "error",
 		"function-paren-newline": ["error", "consistent"],
 		"function-call-argument-newline": ["error", "consistent"],

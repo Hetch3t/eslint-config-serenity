@@ -9,7 +9,11 @@ module.exports = {
 		jest: true
 	},
 
-	extends: [...jsConfig.extends, "plugin:@typescript-eslint/recommended"],
+	extends: [
+		...jsConfig.extends,
+		"plugin:@typescript-eslint/recommended",
+		"plugin:import/typescript"
+	],
 	plugins: [...jsConfig.plugins, "@typescript-eslint", "typescript-enum"],
 
 	parser: "@typescript-eslint/parser",
@@ -33,8 +37,6 @@ module.exports = {
 			files: ["*.ts", "*.tsx"],
 			rules: {
 				"@typescript-eslint/array-type": "error",
-				"@typescript-eslint/class-literal-property-style": ["error", "fields"],
-				"@typescript-eslint/member-ordering": "error",
 				"@typescript-eslint/prefer-optional-chain": "error",
 				"@typescript-eslint/type-annotation-spacing": "error",
 				"@typescript-eslint/no-empty-function": "off",
