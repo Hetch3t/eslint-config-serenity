@@ -63,6 +63,21 @@ module.exports = {
 			{ exceptAfterSingleLine: true }
 		],
 		"block-spacing": "error",
+		"padded-blocks": ["error", { blocks: "never", classes: "always" }],
+		"padding-line-between-statements": [
+			"error",
+			{ blankLine: "always", prev: ["const", "let", "var"], next: "*" },
+			{
+				blankLine: "any",
+				prev: ["const", "let", "var"],
+				next: ["const", "let", "var"]
+			},
+			{
+				blankLine: "always",
+				prev: ["*"],
+				next: ["export"]
+			}
+		],
 		"brace-style": ["error", "1tbs", { allowSingleLine: true }],
 		"eqeqeq": ["error", "always", { null: "ignore" }],
 
