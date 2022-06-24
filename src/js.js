@@ -74,7 +74,12 @@ module.exports = {
 			},
 			{
 				blankLine: "always",
-				prev: ["*"],
+				prev: "*",
+				next: ["export"]
+			},
+			{
+				blankLine: "any",
+				prev: ["export"],
 				next: ["export"]
 			}
 		],
