@@ -1,7 +1,6 @@
+import { ParserOptions } from '@typescript-eslint/parser'
 import eslint from 'eslint'
 import prettier from 'prettier'
-
-import { ParserOptions } from '@typescript-eslint/parser'
 
 
 const MockDecorator =

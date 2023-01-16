@@ -93,10 +93,10 @@ module.exports = {
 				groups: [
 					// Side effect imports.
 					['^\\u0000'],
-					// Packages.
-					['^[a-zA-Z0-9]'],
-					// Company packages.
-					// ['^@[a-zA-Z0-9]'],
+					// Node.js builtins prefixed with `node:`.
+					['^node:'],
+					// Things that start with a letter (or digit or underscore), or `@` followed by a letter.
+					['^@?\\w'],
 					// Anything not matched in another group.
 					['^'],
 					// Relative imports.
