@@ -1,24 +1,23 @@
-const tsConfig = require("./ts")
+const tsConfig = require('./ts')
 
 
 module.exports = {
 	...tsConfig,
 	rules: {
 		...tsConfig.rules,
-		"key-spacing": [
-			"error",
+		'key-spacing': [
+			'error',
 			{
 				singleLine: {
 					beforeColon: false,
 					afterColon: true
 				},
 				multiLine: {
-					beforeColon: true,
-					afterColon: true,
-					align: "colon"
+					beforeColon: false,
+					afterColon: true
 				}
 			}
 		],
-		"no-multi-spaces": "off"
+		'no-multi-spaces': 'off'
 	}
 }

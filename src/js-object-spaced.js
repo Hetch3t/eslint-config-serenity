@@ -1,12 +1,12 @@
-const jsConfig = require("./js")
+const jsConfig = require('./js')
 
 
 module.exports = {
 	...jsConfig,
 	rules: {
 		...jsConfig.rules,
-		"key-spacing": [
-			"error",
+		'key-spacing': [
+			'error',
 			{
 				singleLine: {
 					beforeColon: false,
@@ -15,10 +15,10 @@ module.exports = {
 				multiLine: {
 					beforeColon: true,
 					afterColon: true,
-					align: "colon"
+					align: 'colon'
 				}
 			}
 		],
-		"no-multi-spaces": "off"
+		'no-multi-spaces': 'off'
 	}
 }
