@@ -31,7 +31,7 @@ module.exports = {
 		'max-len': [
 			'error',
 			{
-				code: 80,
+				code: 100,
 				tabWidth: 2,
 				ignoreComments: true,
 				ignoreStrings: true,
@@ -96,7 +96,7 @@ module.exports = {
 					// Packages.
 					['^[a-zA-Z0-9]'],
 					// Company packages.
-					['^@[a-zA-Z0-9]'],
+					// ['^@[a-zA-Z0-9]'],
 					// Anything not matched in another group.
 					['^'],
 					// Relative imports.

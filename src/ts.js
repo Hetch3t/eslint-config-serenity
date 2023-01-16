@@ -12,9 +12,10 @@ module.exports = {
 	extends: [
 		...jsConfig.extends,
 		'plugin:@typescript-eslint/recommended',
+		'plugin:@typescript-eslint/strict',
 		'plugin:import/typescript'
 	],
-	plugins: [...jsConfig.plugins, '@typescript-eslint', 'typescript-enum'],
+	plugins: [...jsConfig.plugins, '@typescript-eslint'],
 
 	parser: '@typescript-eslint/parser',
 
@@ -40,9 +41,7 @@ module.exports = {
 				'@typescript-eslint/prefer-optional-chain': 'error',
 				'@typescript-eslint/type-annotation-spacing': 'error',
 				'@typescript-eslint/no-empty-function': 'off',
-
-				// Plugin rules
-				'typescript-enum/no-enum': 'error',
+				'@typescript-eslint/no-explicit-any': 'warn',
 
 				/* Overrides */
 				'no-unused-vars': 'off',
