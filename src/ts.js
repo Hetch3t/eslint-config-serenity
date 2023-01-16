@@ -12,7 +12,6 @@ module.exports = {
 	extends: [
 		...jsConfig.extends,
 		'plugin:@typescript-eslint/recommended',
-		'plugin:@typescript-eslint/strict',
 		'plugin:import/typescript'
 	],
 	plugins: [...jsConfig.plugins, '@typescript-eslint'],
