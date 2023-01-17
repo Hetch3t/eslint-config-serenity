@@ -78,7 +78,8 @@ module.exports = {
 		'eqeqeq': ['error', 'always', { null: 'ignore' }],
 
 		'dot-location': ['error', 'property'],
-		'newline-per-chained-call': ['error', { ignoreChainWithDepth: 2 }],
+		// Works weird, turned off for now
+		// 'newline-per-chained-call': ['error', { ignoreChainWithDepth: 2 }],
 
 		'no-extra-parens': 'error',
 
