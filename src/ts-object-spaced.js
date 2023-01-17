@@ -13,8 +13,9 @@ module.exports = {
 					afterColon: true
 				},
 				multiLine: {
-					beforeColon: false,
-					afterColon: true
+					beforeColon: true,
+					afterColon: true,
+					align: 'colon'
 				}
 			}
 		],

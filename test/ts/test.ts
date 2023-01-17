@@ -15,10 +15,11 @@ type Repository<T> = Record<string, T>
 type TestType = string
 
 @MockDecorator({
-	selector: 'app-button',
-	templateUrl: './button.component.html',
-	styleUrls: ['./button.component.css']
-})
+	selector    : 'app-button',
+	templateUrl : './button.component.html',
+	styleUrls   : ['./button.component.css'],
+
+} as any)
 export class MockClass {
 
 	@MockPropertyDecorator() text: string
