@@ -28,15 +28,15 @@ module.exports = {
 				maxEOF: 0
 			}
 		],
+		'indent': ['error', 'tab'],
 		'max-len': [
 			'error',
 			{
 				code: 100,
-				tabWidth: 2,
+				tabWidth: 4,
 				ignoreComments: true,
-				ignoreStrings: true,
+				// ignoreStrings: true,
 				ignoreUrls: true,
-				ignoreTemplateLiterals: true,
 				ignoreRegExpLiterals: true,
 				ignorePattern: '^(import\\s|const\\s.*require\\()'
 			}
@@ -44,6 +44,7 @@ module.exports = {
 		'linebreak-style': ['error', 'unix'],
 		'no-trailing-spaces': 'error',
 		'no-multi-spaces': 'error',
+		'no-magic-numbers': 'error',
 		'no-useless-rename': 'error',
 		'spaced-comment': [
 			'error',
@@ -131,7 +132,7 @@ module.exports = {
 			}
 		],
 		'template-curly-spacing': 'error',
-		'newline-destructuring/newline': ['error', { items: 2, itemsWithRest: 2 }],
+		// 'newline-destructuring/newline': ['error', { items: 2, itemsWithRest: 2 }],
 
 		/* Object rules */
 		'quote-props': ['error', 'consistent-as-needed'],

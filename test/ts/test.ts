@@ -17,8 +17,7 @@ type TestType = string
 @MockDecorator({
 	selector    : 'app-button',
 	templateUrl : './button.component.html',
-	styleUrls   : ['./button.component.css'],
-
+	styleUrls   : ['./button.component.css']
 } as any)
 export class MockClass {
 

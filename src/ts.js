@@ -26,7 +26,7 @@ module.exports = {
 		'import/resolver': {
 			typescript: {
 				alwaysTryTypes: true,
-				project: ['tsconfig.json', 'packages/*/tsconfig.json']
+				project: ['tsconfig.json', 'packages/*/tsconfig.json', 'apps/*/tsconfig.json']
 			}
 		}
 	},
@@ -44,6 +44,7 @@ module.exports = {
 
 				/* Overrides */
 				'no-unused-vars': 'off',
+				'indent': 'off',
 				'@typescript-eslint/no-unused-vars': [
 					'error',
 					{
