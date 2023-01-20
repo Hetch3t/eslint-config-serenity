@@ -1,6 +1,5 @@
 module.exports = {
 	printWidth: 100,
-	singleAttributePerLine: true,
 	bracketSameLine: false,
 	semi: false,
 	trailingComma: 'none',
