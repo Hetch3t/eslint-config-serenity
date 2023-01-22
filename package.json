@@ -1,6 +1,6 @@
 {
 	"name": "@hetchet/eslint-config-serenity",
-	"version": "0.0.17",
+	"version": "0.0.18",
 	"keywords": [
 		"eslint",
 		"eslintconfig",
@@ -23,7 +23,7 @@
 		"email": "senieck@gmail.com"
 	},
 	"exports": {
-		".": "./out/default.config.js",
+		".": "./out/eslint-configs/default.config.js",
 		"./prettier": "./out/prettier.config.js"
 	},
 	"files": [
