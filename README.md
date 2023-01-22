@@ -23,11 +23,7 @@ Every time starting new project I was catching frustration due to ESLint / Prett
 - Support for both backend and frontend
 
 ## 🤔 Variants
-- `js` - default JS projects
-- `esm` - projects with `type: module`
-- `js-object-spaced` - ads specific `key-spacing` for `objects`. Prefered option for projects that heavily rely on objects.
-- `ts` - default option for TS projects
-- `ts-object-spaced` - ads specific `key-spacing` for `objects`. Preferred option for NestJS or Angular projects due to readability improvements of objects (e.g. in decorators).
+- None.
 
 ## 📦 Installation
 
@@ -60,7 +56,7 @@ There are several options how to use this linting/formatting/styling configurati
 	...
 	"prettier": "@hetchet/eslint-config-serenity/prettier",
 	"eslintConfig": {
-		"extends": "@hetchet/serenity/(js|esm|js-object-spaced|esm|ts|ts-object-spaced)"
+		"extends": "@hetchet/serenity"
 	},
 	...
 }
@@ -81,7 +77,7 @@ module.exports = {
 
 ```jsonc
 {
-	extends: "@hetchet/serenity/(js|js-object-spaced|esm|ts|ts-object-spaced)"),
+	extends: "@hetchet/serenity"),
 	// Any ESLint overrides go here
 }
 ```
