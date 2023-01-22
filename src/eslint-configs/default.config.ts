@@ -16,15 +16,15 @@ const eslintTsConfig: EslintConfig = {
 		{
 			files : ['*.ts', '*.tsx'],
 
-			extends  : ['plugin:@typescript-eslint/recommended', 'plugin:import/typescript'],
-			parser   : '@typescript-eslint/parser',
-			// parserOptions : {
-			// 	project : [
-			// 		'./tsconfig.json',
-			// 		'./packages/**/tsconfig.json',
-			// 		'./apps/**/tsconfig.json'
-			// 	]
-			// },
+			extends       : ['plugin:@typescript-eslint/recommended', 'plugin:import/typescript'],
+			parser        : '@typescript-eslint/parser',
+			parserOptions : {
+				project : [
+					'./tsconfig.json',
+					'./packages/**/tsconfig.json',
+					'./apps/**/tsconfig.json'
+				]
+			},
 			plugins  : ['@typescript-eslint'],
 			rules    : typescriptRules,
 			settings : {

@@ -11,8 +11,7 @@ export const typescriptRules: Partial<Rules> = {
 		{ assertionStyle: 'as', objectLiteralTypeAssertions: 'never' }
 	],
 	'@typescript-eslint/consistent-type-definitions' : 'error',
-	// TODO: parserOptions.project
-	// '@typescript-eslint/consistent-type-exports'     : 'error',
+	'@typescript-eslint/consistent-type-exports'     : 'error',
 	'@typescript-eslint/consistent-type-imports'     : [
 		'error',
 		{
@@ -27,12 +26,11 @@ export const typescriptRules: Partial<Rules> = {
 			selector : 'objectLiteralProperty'
 		}
 	],
-	// TODO: parserOptions.project
-	// '@typescript-eslint/no-unnecessary-boolean-literal-compare' : 'error',
-	// '@typescript-eslint/no-unnecessary-condition'               : 'error',
-	// '@typescript-eslint/non-nullable-type-assertion-style'      : 'error',
-	'@typescript-eslint/prefer-optional-chain'   : 'error',
-	'@typescript-eslint/type-annotation-spacing' : 'error',
+	'@typescript-eslint/no-unnecessary-boolean-literal-compare' : 'error',
+	'@typescript-eslint/no-unnecessary-condition'               : 'error',
+	'@typescript-eslint/non-nullable-type-assertion-style'      : 'error',
+	'@typescript-eslint/prefer-optional-chain'                  : 'error',
+	'@typescript-eslint/type-annotation-spacing'                : 'error',
 
 	/* Overrides */
 	'@typescript-eslint/no-empty-function' : 'off',
@@ -50,9 +48,8 @@ export const typescriptRules: Partial<Rules> = {
 	'@typescript-eslint/comma-spacing' : 'error',
 	'comma-spacing'                    : 'off',
 
-	// TODO: parserOptions.project
-	// '@typescript-eslint/dot-notation' : 'error',
-	'dot-notation' : 'off',
+	'@typescript-eslint/dot-notation' : 'error',
+	'dot-notation'                    : 'off',
 
 	'@typescript-eslint/no-dupe-class-members' : 'error',
 	'no-dupe-class-members'                    : 'off',
@@ -99,9 +96,8 @@ export const typescriptRules: Partial<Rules> = {
 	],
 	'padding-line-between-statements' : 'off',
 
-	// TODO: parserOptions.project
-	// '@typescript-eslint/no-throw-literal' : 'error',
-	'no-throw-literal' : 'off',
+	'@typescript-eslint/no-throw-literal' : 'error',
+	'no-throw-literal'                    : 'off',
 
 	'@typescript-eslint/no-magic-numbers' : [
 		'error',
