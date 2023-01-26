@@ -8,7 +8,7 @@ export const typescriptRules: Partial<Rules> = {
 	'@typescript-eslint/consistent-indexed-object-style' : 'error',
 	'@typescript-eslint/consistent-type-assertions'      : [
 		'error',
-		{ assertionStyle: 'as', objectLiteralTypeAssertions: 'never' }
+		{ assertionStyle: 'as', objectLiteralTypeAssertions: 'allow-as-parameter' }
 	],
 	'@typescript-eslint/consistent-type-definitions' : 'error',
 	'@typescript-eslint/consistent-type-exports'     : 'error',
