@@ -73,6 +73,7 @@ export const typescriptRules: Partial<Rules> = {
 	'@typescript-eslint/padding-line-between-statements' : [
 		'error',
 		{ blankLine: 'always', next: '*', prev: ['const', 'let', 'var'] },
+		{ blankLine: 'always', next: 'return', prev: '*' },
 		{
 			blankLine : 'always',
 			next      : ['interface', 'type'],

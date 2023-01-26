@@ -7,10 +7,11 @@ const eslintTsConfig: EslintConfig = {
 		es2022 : true,
 		node   : true
 	},
-	extends       : ['eslint:recommended', 'prettier'],
-	parserOptions : { ecmaVersion: 'latest' },
-	plugins       : ['simple-import-sort', 'import', 'newline-destructuring', 'prettier'],
-	rules         : defaultRules,
+	extends        : ['eslint:recommended', 'prettier'],
+	ignorePatterns : ['node_modules', '**/dist'],
+	parserOptions  : { ecmaVersion: 'latest' },
+	plugins        : ['simple-import-sort', 'import', 'newline-destructuring', 'prettier'],
+	rules          : defaultRules,
 
 	overrides : [
 		{
@@ -19,11 +20,7 @@ const eslintTsConfig: EslintConfig = {
 			extends       : ['plugin:@typescript-eslint/recommended', 'plugin:import/typescript'],
 			parser        : '@typescript-eslint/parser',
 			parserOptions : {
-				project : [
-					'./tsconfig.json',
-					'./packages/**/tsconfig.json',
-					'./apps/**/tsconfig.json'
-				],
+				project         : './{apps/*,packages/*,}/tsconfig?(.spec|.app).json',
 				tsconfigRootDir : __dirname.split('node_modules')[0]
 			},
 			plugins  : ['@typescript-eslint'],
