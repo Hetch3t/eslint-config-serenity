@@ -23,7 +23,8 @@ const eslintTsConfig: EslintConfig = {
 					'./tsconfig.json',
 					'./packages/**/tsconfig.json',
 					'./apps/**/tsconfig.json'
-				]
+				],
+				tsconfigRootDir : __dirname.split('node_modules')[0]
 			},
 			plugins  : ['@typescript-eslint'],
 			rules    : typescriptRules,

@@ -33,8 +33,11 @@
 		"build": "rm -rf out && tsc -b tsconfig.json",
 		"prepublish": "yarn build"
 	},
+	"prettier": "@hetchet/eslint-config-serenity/prettier",
 	"devDependencies": {
+		"@hetchet/eslint-config-serenity": "file:.",
 		"@hetchet/eslint-plugin-sort-keys": "^0.0.2",
+		"@types/node": "^18.11.18",
 		"@typescript-eslint/eslint-plugin": "^5.48.2",
 		"@typescript-eslint/parser": "^5.48.2",
 		"eslint": "^8.32.0",
