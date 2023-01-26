@@ -64,9 +64,9 @@ const eslintTsConfig: EslintConfig = {
 			files : ['*.tsx', '*.jsx'],
 
 			extends : [
-				'plugin:react/jsx-runtime',
 				'plugin:react/recommended',
-				'plugin:react-hooks/recommended'
+				'plugin:react-hooks/recommended',
+				'plugin:react/jsx-runtime'
 			],
 			parserOptions : {
 				ecmaFeatures : {
