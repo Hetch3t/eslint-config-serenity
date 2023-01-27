@@ -24,6 +24,7 @@
 	},
 	"exports": {
 		".": "./out/eslint-configs/default.config.js",
+		"./object-key-spaced": "./out/eslint-configs/ts-object-spaced.config.js ",
 		"./prettier": "./out/prettier.config.js"
 	},
 	"files": [
