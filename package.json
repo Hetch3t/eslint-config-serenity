@@ -1,6 +1,6 @@
 {
 	"name": "@hetchet/eslint-config-serenity",
-	"version": "0.0.19-alpha.2",
+	"version": "0.0.20",
 	"keywords": [
 		"eslint",
 		"eslintconfig",
