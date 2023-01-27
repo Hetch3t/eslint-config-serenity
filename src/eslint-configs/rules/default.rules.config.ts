@@ -49,6 +49,7 @@ export const defaultRules: Partial<Rules> = {
 	'padding-line-between-statements' : [
 		'error',
 		{ blankLine: 'always', next: '*', prev: ['const', 'let', 'var'] },
+		{ blankLine: 'always', next: 'return', prev: '*' },
 		{
 			blankLine : 'any',
 			next      : ['const', 'let', 'var'],

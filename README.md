@@ -15,15 +15,36 @@ Every time starting new project I was catching frustration due to ESLint / Prett
 
 ## ✨ Features
 
-- Very opinionated (though can be overriden (discouraged))
-- Tabs + double quotes + no semicolons
-- Focus on **readability** and **consistency**
+- Very (VERY) opinionated
+- Tabs + single quotes + no semicolons => minimalism
+- Focused on **readability** and **consistency**
 - Easy setup for new projects
-- Support for both JS and TS
+- Supports JS, TS, CSS
 - Support for both backend and frontend
 
-## 🤔 Variants
-- None.
+## 🪐 Object key spacing
+- Default (`@hetchet/serenity`):
+	- Keys in objects are spaced only after semicolon. E.g.:
+	```js
+	const obj = {
+		a: 1,
+		some_key: 2,
+
+		b: 3,
+		key: 55
+	}
+	```
+	- For `['*.interface.ts', '*.type.ts', '*.d.ts', '*.config.+(js|ts)']` object keys spacing is aligned on the longest key, new line breaks alignment. E.g.:
+	```js
+	const obj = {
+		a        : 1,
+		some_key : 2,
+
+		b   : 3,
+		key : 55
+	}
+	```
+- Always spaced (`@hetchet/serenity/object-key-spaced`) = second variant from above for all files. Personal preference for NestJS projects.
 
 ## 📦 Installation
 
