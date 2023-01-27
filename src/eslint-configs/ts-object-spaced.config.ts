@@ -1,10 +1,12 @@
 import defaultEslintConfig from './default.config'
-import { defaultRules, objectKeysSpacedAndSortedRules } from './rules'
+import { objectKeysSpacedAndSortedRules } from './rules'
 
 
 const eslintObjectSpacedConfig = {
 	...defaultEslintConfig,
-	rules : { ...defaultRules, ...objectKeysSpacedAndSortedRules }
 }
+
+Object.assign(eslintObjectSpacedConfig.rules!, objectKeysSpacedAndSortedRules)
+eslintObjectSpacedConfig.plugins?.push('@hetchet/sort-keys')
 
 export = eslintObjectSpacedConfig
